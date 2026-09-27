@@ -1,0 +1,161 @@
+/* ==========================================================================
+   UNIMAGINABLE WEDDING INVITATION — RTL STYLESHEET (Urdu & Arabic)
+   Proper bidirectional layouts, Nastaliq / Naskh typography, reversed margins & icons
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Amiri', 'Noto Nastaliq Urdu', Tahoma, Arial, sans-serif;
+}
+
+[dir="rtl"] .section-title,
+[dir="rtl"] .hero-couple-names,
+[dir="rtl"] .entrance-couple-title,
+[dir="rtl"] .couple-name,
+[dir="rtl"] .event-title,
+[dir="rtl"] .venue-title,
+[dir="rtl"] .family-side-title,
+[dir="rtl"] .contact-side-title {
+  font-family: 'Amiri', 'Noto Nastaliq Urdu', 'Cinzel', serif;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+[dir="rtl"] .section-header,
+[dir="rtl"] .hero-content,
+[dir="rtl"] .entrance-card,
+[dir="rtl"] .couple-card,
+[dir="rtl"] .family-card,
+[dir="rtl"] .contact-box,
+[dir="rtl"] .qr-footer-card,
+[dir="rtl"] .grand-footer {
+  text-align: center;
+}
+
+/* RTL Navigation */
+[dir="rtl"] .lang-menu {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .nav-links {
+  letter-spacing: 0;
+  gap: clamp(8px, 1.1vw, 15px);
+}
+
+[dir="rtl"] .nav-link {
+  font-size: clamp(0.85rem, 0.95vw, 0.94rem);
+  line-height: 1.2;
+}
+
+[dir="rtl"] .btn-nav-qr,
+[dir="rtl"] .audio-toggle-btn,
+[dir="rtl"] .lang-toggle-btn {
+  line-height: 1.2;
+  font-size: 0.8rem;
+  padding: 0 10px;
+}
+
+/* RTL Gate Perspective Alignment */
+[dir="rtl"] .gate-door.left-door {
+  transform-origin: right center;
+}
+
+[dir="rtl"] .gate-door.right-door {
+  transform-origin: left center;
+}
+
+/* RTL Timeline */
+[dir="rtl"] .timeline-item {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .timeline-item:nth-child(even) {
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .timeline-marker {
+  right: auto;
+  left: -14px;
+}
+
+[dir="rtl"] .timeline-item:nth-child(even) .timeline-marker {
+  left: auto;
+  right: -14px;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .timeline-line {
+    right: 20px;
+    left: auto;
+  }
+  [dir="rtl"] .timeline-item,
+  [dir="rtl"] .timeline-item:nth-child(even) {
+    padding-right: 50px;
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+  [dir="rtl"] .timeline-marker,
+  [dir="rtl"] .timeline-item:nth-child(even) .timeline-marker {
+    right: 6px;
+    left: auto;
+  }
+}
+
+/* RTL Events Meta & Forms */
+[dir="rtl"] .event-meta li {
+  text-align: right;
+}
+
+[dir="rtl"] .form-label {
+  text-align: right;
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .form-control {
+  text-align: right;
+}
+
+[dir="rtl"] .radio-pill-label {
+  text-align: right;
+}
+
+/* RTL Lightbox Buttons */
+[dir="rtl"] .lightbox-prev {
+  left: auto;
+  right: -60px;
+}
+
+[dir="rtl"] .lightbox-next {
+  right: auto;
+  left: -60px;
+}
+
+[dir="rtl"] .lightbox-close {
+  right: auto;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .lightbox-prev { right: 10px; left: auto; }
+  [dir="rtl"] .lightbox-next { left: 10px; right: auto; }
+  [dir="rtl"] .lightbox-close { left: 20px; right: auto; }
+}
+
+/* RTL Carousel Navigation Buttons (maintain physical left/right positions) */
+[dir="rtl"] .carousel-prev {
+  left: 20px;
+  right: auto;
+}
+
+[dir="rtl"] .carousel-next {
+  right: 20px;
+  left: auto;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .carousel-prev { left: 8px; right: auto; }
+  [dir="rtl"] .carousel-next { right: 8px; left: auto; }
+}
+
