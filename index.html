@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="hi-Latn" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizan &amp; Ariba — Royal Nikah Invitation | 30 Oct 2027</title>
+    
+    <meta name="description" content="You are cordially invited to celebrate the Nikah and Walima of Faizan Patel &amp; Ariba Deshmukh at Patel Medical, Fatema Nagar, MIDC, Jalgaon.">
+    <meta name="theme-color" content="#0B2B20">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Faizan &amp; Ariba — Royal Nikah Invitation">
+    <meta property="og:description" content="You are cordially invited to celebrate the Nikah and Walima of Faizan Patel &amp; Ariba Deshmukh.">
+    <meta property="og:image" content="assets/images/og-invitation-cover.jpg">
+    <meta property="og:url" content="http://localhost:8080/index.html">
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/royal-crest.svg">
+
+    <!-- Google Fonts (Cormorant Garamond, Noto Nastaliq Urdu, Amiri, Tiro Devanagari Marathi, Tiro Devanagari Hindi, Noto Serif Gujarati) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Serif+Gujarati:wght@400;600;700&family=Tiro+Devanagari+Marathi:ital@0;1&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <!-- Lightweight QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script>
+        window.currentLocale = "hinglish";
+        window.currentDirection = "ltr";
+        window.weddingDate = "2027-10-30T19:00:00";
+        window.qrTargetUrl = "http://localhost:8080/index.html";
+    </script>
+</head>
+<body class="entrance-active">
+
+    <!-- 1. Floating Navigation Bar -->
+    <nav class="royal-navbar" aria-label="Main Navigation">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand" aria-label="Wedding Monogram">
+                <img src="assets/images/royal-crest.svg" alt="Royal Monogram" class="nav-crest">
+                <span class="nav-monogram gold-gradient-text">F &amp; A</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="#scratch-section" class="nav-link" data-i18n="nav_couple">Dulha-Dulhan</a></li>
+                <li><a href="#events-section" class="nav-link" data-i18n="nav_events">Nikah &amp; Walima</a></li>
+                <li><a href="#family-section" class="nav-link" data-i18n="nav_family">Dua &amp; Family</a></li>
+                <li><a href="#gallery-section" class="nav-link" data-i18n="nav_gallery">Moments</a></li>
+                <li><a href="#venue-section" class="nav-link" data-i18n="nav_venue">Venue &amp; Map</a></li>
+                <li><a href="#rsvp-section" class="nav-link" data-i18n="nav_rsvp">RSVP</a></li>
+                <li><a href="#contact-section" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <!-- Show QR Modal Button in Navbar -->
+                <button id="btn-show-qr" class="btn-nav-qr" aria-label="Show QR Code Modal" title="Scan / Share QR Code">
+                    <span>📱</span> <span data-i18n="nav_show_qr">Show QR</span>
+                </button>
+
+                <button id="btn-audio-toggle" class="audio-toggle-btn" aria-label="Toggle Background Music">
+                    <div class="audio-bars">
+                        <span class="audio-bar"></span>
+                        <span class="audio-bar"></span>
+                        <span class="audio-bar"></span>
+                        <span class="audio-bar"></span>
+                    </div>
+                    <span id="audio-status-text" data-i18n="music_muted">Music On</span>
+                </button>
+
+                <!-- Navbar Language Dropdown -->
+                <div class="lang-dropdown-wrapper" id="lang-dropdown-wrapper">
+                    <button class="lang-toggle-btn" id="lang-toggle-btn" aria-expanded="false" aria-label="Select Language">
+                        <span id="nav-current-flag">✨</span>
+                        <span id="nav-current-lang-name">Hinglish</span>
+                        <small>▼</small>
+                    </button>
+                    <ul class="lang-menu" id="lang-menu">
+                        <li class="lang-menu-item active"><a href="javascript:void(0)" data-lang="hinglish"><span>✨ Hinglish</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="urdu"><span>🌙 اردو (Urdu)</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="english"><span>👑 English</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="marathi"><span>🌸 मराठी (Marathi)</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="hindi"><span>🪔 हिन्दी (Hindi)</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="gujarati"><span>🏵️ ગુજરાતી (Gujarati)</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="arabic"><span>⚜️ العربية (Arabic)</span></a></li>
+                    </ul>
+                </div>
+
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open Navigation Menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Cinematic Palace Entrance with Round Wax Seal Button + Bottom Language Bar -->
+    <div id="entrance-stage" role="dialog" aria-modal="true" aria-label="Wedding Palace Entrance">
+        <div class="entrance-particles" id="entrance-particles"></div>
+        <div class="gate-wrapper">
+            <div class="gate-door left-door"></div>
+            <div class="gate-door right-door"></div>
+        </div>
+        <div class="entrance-arch-frame"></div>
+
+        <!-- Center Floating Silver Coin Seal & Language Selector -->
+        <div class="entrance-seal-center">
+            <!-- Round Silver & Pearl Coin Seal Button -->
+            <button id="btn-enter-wedding" class="btn-royal-seal" aria-label="Tap Royal Silver Seal to Open Invitation" title="Open Invitation">
+                <img src="assets/images/royal-wax-seal.svg?v=4" alt="Royal Seal" class="seal-img">
+            </button>
+
+            <!-- Language Selector Directly Below the Seal -->
+            <div class="entrance-lang-bar" aria-label="Select Language">
+                <button type="button" class="entrance-lang-pill active" data-lang="hinglish">✨ Hinglish</button>
+                <button type="button" class="entrance-lang-pill" data-lang="urdu">🌙 اردو (Urdu)</button>
+                <button type="button" class="entrance-lang-pill" data-lang="english">👑 English</button>
+                <button type="button" class="entrance-lang-pill" data-lang="marathi">🌸 मराठी (Marathi)</button>
+                <button type="button" class="entrance-lang-pill" data-lang="hindi">🪔 हिन्दी (Hindi)</button>
+                <button type="button" class="entrance-lang-pill" data-lang="gujarati">🏵️ ગુજરાતી (Gujarati)</button>
+                <button type="button" class="entrance-lang-pill" data-lang="arabic">⚜️ العربية (Arabic)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Wedding Content -->
+    <main id="main-wedding-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-arch-bg"></div>
+            <div class="hero-content">
+                <p class="bismillah-header">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+                <p class="quran-verse" data-i18n="hero_quran_verse">“Aur Humne Tumhein Jodon Mein Paida Kiya” (Surah An-Naba 78:8)</p>
+                
+                <span class="section-badge" data-i18n="hero_getting_married">Nikah &amp; Walima Celebration</span>
+                <h1 class="hero-couple-names gold-gradient-text gold-glow" data-i18n="hero_couple_names">Faizan &amp; Ariba</h1>
+                <p class="hero-wedding-date" data-i18n="hero_date_location">30 October 2027 • Patel Medical, Fatema Nagar, MIDC, Jalgaon</p>
+                
+                <div class="hero-cta-group">
+                    <a href="#rsvp-section" class="btn-royal-primary"><span>💌</span> <span data-i18n="hero_btn_rsvp">RSVP Bhejein</span></a>
+                    <a href="#events-section" class="btn-royal-outline"><span>🪔</span> <span data-i18n="hero_btn_events">Functions Dekhein</span></a>
+                </div>
+                <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+            </div>
+        </section>
+
+        <!-- Scratch-To-Reveal Couple Names & Date -->
+        <section id="scratch-section" class="section-wrapper scratch-section">
+            <!-- Inline SVG Definitions for Smooth Heart Clip Path & Gold Stroke (Matching heart.png) -->
+            <svg width="0" height="0" style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+                <defs>
+                    <clipPath id="heart-clip" clipPathUnits="objectBoundingBox">
+                        <path d="M 0.50, 0.208 C 0.42, 0.11, 0.32, 0.088, 0.21, 0.115 C 0.08, 0.155, 0.058, 0.26, 0.058, 0.35 C 0.058, 0.54, 0.24, 0.72, 0.50, 0.91 C 0.76, 0.72, 0.942, 0.54, 0.942, 0.35 C 0.942, 0.26, 0.92, 0.155, 0.79, 0.115 C 0.68, 0.088, 0.58, 0.11, 0.50, 0.208 Z" />
+                    </clipPath>
+                    <linearGradient id="goldHeartStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#FFECA8" />
+                        <stop offset="50%" stop-color="#D4AF37" />
+                        <stop offset="100%" stop-color="#8C6D23" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="scratch_names_title">Shubh Nikah Ke Dulha &amp; Dulhan</span>
+                    <h2 class="section-title gold-gradient-text" data-i18n="scratch_names_title">Shubh Nikah Ke Dulha &amp; Dulhan</h2>
+                    <p class="section-subtitle" data-i18n="scratch_names_subtitle">Nazar mili to yun laga jaise barson se jaante the, shayad kuch rishtey waqt se pehle likhe jaate hain</p>
+                    <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+                </div>
+
+                <div class="scratch-names-grid">
+                    <!-- Bride Heart Scratch Card -->
+                    <div class="scratch-card-box heart-card-box">
+                        <div class="scratch-card-header">
+                            <span class="section-badge" data-i18n="scratch_bride_label">The Bride (Ariba Deshmukh)</span>
+                        </div>
+                        <div class="heart-scratch-wrapper">
+                            <div class="heart-scratch-container" id="container-scratch-bride">
+                                <div class="scratch-revealed-content heart-revealed-content">
+                                    <img src="assets/images/bride.jpg" alt="Ariba Deshmukh" class="scratch-revealed-avatar">
+                                    <h3 class="scratch-revealed-name gold-gradient-text" data-i18n="bride_name">Ariba Deshmukh</h3>
+                                </div>
+                                <canvas id="canvas-scratch-bride" class="scratch-canvas"></canvas>
+                            </div>
+                            <!-- Smooth Heart Filigree Border -->
+                            <svg class="heart-svg-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <path d="M 50, 20.8 C 42, 11, 32, 8.8, 21, 11.5 C 8, 15.5, 5.8, 26, 5.8, 35 C 5.8, 54, 24, 72, 50, 91 C 76, 72, 94.2, 54, 94.2, 35 C 94.2, 26, 92, 15.5, 79, 11.5 C 68, 8.8, 58, 11, 50, 20.8 Z" fill="none" stroke="url(#goldHeartStroke)" stroke-width="2.8" />
+                            </svg>
+                        </div>
+                        <div class="scratch-footer-actions">
+                            <span class="scratch-hint" data-i18n="scratch_card_instruction">Ungli ya mouse se gold foil scratch karein ✨</span>
+                            <button type="button" class="scratch-tap-btn" onclick="window.scratchCards?.['bride']?.forceReveal()" data-i18n="scratch_tap_fallback">Tap karke reveal karein</button>
+                        </div>
+                    </div>
+
+                    <!-- Groom Heart Scratch Card -->
+                    <div class="scratch-card-box heart-card-box">
+                        <div class="scratch-card-header">
+                            <span class="section-badge" data-i18n="scratch_groom_label">The Groom (Faizan Patel)</span>
+                        </div>
+                        <div class="heart-scratch-wrapper">
+                            <div class="heart-scratch-container" id="container-scratch-groom">
+                                <div class="scratch-revealed-content heart-revealed-content">
+                                    <img src="assets/images/groom.jpg" alt="Faizan Patel" class="scratch-revealed-avatar">
+                                    <h3 class="scratch-revealed-name gold-gradient-text" data-i18n="groom_name">Faizan Patel</h3>
+                                </div>
+                                <canvas id="canvas-scratch-groom" class="scratch-canvas"></canvas>
+                            </div>
+                            <!-- Smooth Heart Filigree Border -->
+                            <svg class="heart-svg-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <path d="M 50, 20.8 C 42, 11, 32, 8.8, 21, 11.5 C 8, 15.5, 5.8, 26, 5.8, 35 C 5.8, 54, 24, 72, 50, 91 C 76, 72, 94.2, 54, 94.2, 35 C 94.2, 26, 92, 15.5, 79, 11.5 C 68, 8.8, 58, 11, 50, 20.8 Z" fill="none" stroke="url(#goldHeartStroke)" stroke-width="2.8" />
+                            </svg>
+                        </div>
+                        <div class="scratch-footer-actions">
+                            <span class="scratch-hint" data-i18n="scratch_card_instruction">Ungli ya mouse se gold foil scratch karein ✨</span>
+                            <button type="button" class="scratch-tap-btn" onclick="window.scratchCards?.['groom']?.forceReveal()" data-i18n="scratch_tap_fallback">Tap karke reveal karein</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date Scratch Card -->
+                <div class="scratch-date-wrapper">
+                    <div class="scratch-card-box">
+                        <div class="scratch-card-header">
+                            <span class="section-badge" data-i18n="scratch_date_title">Save The Auspicious Date</span>
+                            <p class="section-subtitle" style="margin-top: 6px;" data-i18n="scratch_date_subtitle">Nikah ki mubarak tareekh scratch karke unlock karein</p>
+                        </div>
+                        <div class="scratch-canvas-container scratch-date-container" id="container-scratch-date">
+                            <div class="scratch-revealed-content">
+                                <h3 class="scratch-date-revealed-title gold-gradient-text" data-i18n="scratch_date_revealed_heading">30 October 2027</h3>
+                                <p class="scratch-revealed-sub" data-i18n="scratch_date_revealed_sub">Nikah &amp; Walima Ceremony • Jalgaon</p>
+                            </div>
+                            <canvas id="canvas-scratch-date" class="scratch-canvas"></canvas>
+                        </div>
+                        <div class="scratch-footer-actions">
+                            <span class="scratch-hint" data-i18n="scratch_date_hint">Scratch Karein &amp; Tareekh Dekhein</span>
+                            <button type="button" class="scratch-tap-btn" onclick="window.scratchCards?.['date']?.forceReveal()" data-i18n="scratch_tap_fallback">Tap karke reveal karein</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aesthetic 3D Royal Moments Carousel (With Auto-Scrolling) -->
+        <section id="carousel-section" class="section-wrapper carousel-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="carousel_badge">Royal Glimpses</span>
+                    <h2 class="section-title gold-gradient-text" data-i18n="carousel_title">Faizan &amp; Ariba — Mubarak Lamhe</h2>
+                    <p class="section-subtitle" data-i18n="carousel_subtitle">Mohabbat, tehzeeb aur khushiyon ki ek dastan</p>
+                    <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+                </div>
+
+                <div class="royal-carousel-container" id="wedding-carousel">
+                    <!-- Left Arrow: Previous Slide -->
+                    <button type="button" class="carousel-btn carousel-prev" id="carousel-prev-btn" aria-label="Previous Slide">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <!-- Right Arrow: Next Slide -->
+                    <button type="button" class="carousel-btn carousel-next" id="carousel-next-btn" aria-label="Next Slide">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="carousel-stage">
+                        <!-- Slide 1: Bride -->
+                        <div class="carousel-slide active" data-index="0">
+                            <div class="carousel-slide-card">
+                                <img src="assets/images/img1.jpg" alt="Ariba Deshmukh — The Royal Bride" class="carousel-slide-img" loading="lazy">
+                                <div class="carousel-slide-info">
+                                    <span class="carousel-slide-tag" data-i18n="slide_bride_tag">The Bride</span>
+                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="bride_name">Ariba Deshmukh</h3>
+                                    <p class="carousel-slide-sub" data-i18n="slide_bride_sub">Grace, Elegance &amp; Purity</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Groom -->
+                        <div class="carousel-slide next" data-index="1">
+                            <div class="carousel-slide-card">
+                                <img src="assets/images/img2.jpg" alt="Faizan Patel — The Royal Groom" class="carousel-slide-img" loading="lazy">
+                                <div class="carousel-slide-info">
+                                    <span class="carousel-slide-tag" data-i18n="slide_groom_tag">The Groom</span>
+                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="groom_name">Faizan Patel</h3>
+                                    <p class="carousel-slide-sub" data-i18n="slide_groom_sub">Dignity, Chivalry &amp; Honor</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Eternal Grace -->
+                        <div class="carousel-slide hidden" data-index="2">
+                            <div class="carousel-slide-card">
+                                <img src="assets/images/img3.jpg" alt="Eternal Grace" class="carousel-slide-img" loading="lazy">
+                                <div class="carousel-slide-info">
+                                    <span class="carousel-slide-tag" data-i18n="slide_moment_tag">Sacred Union</span>
+                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="slide_moment_3_title">Eternal Grace</h3>
+                                    <p class="carousel-slide-sub" data-i18n="slide_moment_3_sub">Two Souls Bound in Faith</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4: Sacred Nikah -->
+                        <div class="carousel-slide hidden" data-index="3">
+                            <div class="carousel-slide-card">
+                                <img src="assets/images/img4.jpg" alt="Sacred Nikah" class="carousel-slide-img" loading="lazy">
+                                <div class="carousel-slide-info">
+                                    <span class="carousel-slide-tag" data-i18n="slide_nikah_tag">Auspicious Nikah</span>
+                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="slide_moment_4_title">Royal Heritage</h3>
+                                    <p class="carousel-slide-sub" data-i18n="slide_moment_4_sub">A Legacy of Love &amp; Respect</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5: Celebration -->
+                        <div class="carousel-slide hidden" data-index="4">
+                            <div class="carousel-slide-card">
+                                <img src="assets/images/img5.jpg" alt="Celebration" class="carousel-slide-img" loading="lazy">
+                                <div class="carousel-slide-info">
+                                    <span class="carousel-slide-tag" data-i18n="slide_celebration_tag">Celebration</span>
+                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="slide_moment_5_title">Timeless Bonds</h3>
+                                    <p class="carousel-slide-sub" data-i18n="slide_moment_5_sub">Joyous Smiles &amp; Celebrations</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 6: Together Forever -->
+                        <div class="carousel-slide prev" data-index="5">
+                            <div class="carousel-slide-card">
+                                <img src="assets/images/img6.jpg" alt="Together Forever" class="carousel-slide-img" loading="lazy">
+                                <div class="carousel-slide-info">
+                                    <span class="carousel-slide-tag" data-i18n="slide_forever_tag">Together Forever</span>
+                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="slide_moment_6_title">InshaAllah Khair</h3>
+                                    <p class="carousel-slide-sub" data-i18n="slide_moment_6_sub">Stepping into Tomorrow with Duas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dot Indicators -->
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dedicated Royal Cinematic Wedding Video Section -->
+        <section id="video-section" class="section-wrapper video-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="video_section_badge">Cinematic Film</span>
+                    <h2 class="section-title gold-gradient-text" data-i18n="video_section_title">Faizan &amp; Ariba — Invitation Film</h2>
+                    <p class="section-subtitle" data-i18n="video_section_subtitle">Ek khoobsurat daastaan-e-ishq aur shahi tehzeeb ka manzar</p>
+                    <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+                </div>
+
+                <div class="royal-video-wrapper">
+                    <div class="royal-video-frame" id="royal-video-frame">
+                        <video id="royal-wedding-video" class="royal-video-element" muted playsinline loop preload="metadata" poster="assets/images/img4.jpg">
+                            <source src="assets/videos/video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- Custom Overlay Play Button -->
+                        <div class="video-overlay-play" id="video-overlay-play" role="button" aria-label="Play Wedding Film">
+                            <div class="play-pulse-ring"></div>
+                            <div class="play-btn-circle">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <span class="play-text" data-i18n="video_play_prompt">Play Wedding Film / Video Dekhein</span>
+                        </div>
+
+                        <!-- Custom Floating Video Controls Bar -->
+                        <div class="video-custom-controls" id="video-custom-controls">
+                            <button type="button" id="btn-video-playpause" class="video-ctrl-btn" aria-label="Play/Pause">❚❚</button>
+                            <div class="video-progress-bar" id="video-progress-bar">
+                                <div class="video-progress-fill" id="video-progress-fill"></div>
+                            </div>
+                            <button type="button" id="btn-video-mute" class="video-ctrl-btn" aria-label="Mute/Unmute">🔇</button>
+                            <button type="button" id="btn-video-fullscreen" class="video-ctrl-btn" aria-label="Fullscreen">⛶</button>
+                        </div>
+                    </div>
+
+                    <!-- Video Bottom Blessing Banner -->
+                    <div class="video-footer-quote">
+                        <p class="video-quote-text" data-i18n="video_quote">“Do Dilon Ka Milan, Khushiyon Ka Jashn, Aur Allah Ki Rehmat”</p>
+                        <span class="video-quote-author gold-gradient-text" data-i18n="video_quote_author">Faizan &amp; Ariba • 30 Oct 2027</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown -->
+        <section id="countdown-section" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="countdown_title">Nikah Countdown</span>
+                    <h2 class="section-title gold-gradient-text" data-i18n="countdown_title">Nikah Countdown</h2>
+                    <p class="section-subtitle" data-i18n="countdown_subtitle">Mubarak rasoomat shuru hone mein baaki hain:</p>
+                    <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+                </div>
+                <div class="countdown-grid" id="countdown-grid">
+                    <div class="countdown-card">
+                        <div class="countdown-digit gold-gradient-text" id="count-days">00</div>
+                        <div class="countdown-label" data-i18n="days">Dinn</div>
+                    </div>
+                    <div class="countdown-card">
+                        <div class="countdown-digit gold-gradient-text" id="count-hours">00</div>
+                        <div class="countdown-label" data-i18n="hours">Ghante</div>
+                    </div>
+                    <div class="countdown-card">
+                        <div class="countdown-digit gold-gradient-text" id="count-minutes">00</div>
+                        <div class="countdown-label" data-i18n="minutes">Minutes</div>
+                    </div>
+                    <div class="countdown-card">
+                        <div class="countdown-digit gold-gradient-text" id="count-seconds">00</div>
+                        <div class="countdown-label" data-i18n="seconds">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nikah & Walima Itinerary (Required Details) -->
+        <section id="events-section" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="events_section_title">Nikah &amp; Walima Schedule</span>
+                    <h2 class="section-title gold-gradient-text" data-i18n="events_section_title">Nikah &amp; Walima Schedule</h2>
+                    <p class="section-subtitle" data-i18n="events_section_subtitle">Aapki shirkat aur duayein hamare liye sabse bada tohfa hain</p>
+                    <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+                </div>
+                <div class="events-grid">
+                    <!-- Nikah -->
+                    <div class="event-card">
+                        <div class="event-header">
+                            <span class="event-date-badge" data-i18n="event_nikah_date">Saturday, 30 Oct 2027</span>
+                            <span>⚜️</span>
+                        </div>
+                        <h3 class="event-title gold-gradient-text" data-i18n="event_nikah_title">Mubarak Nikah Ceremony &amp; Dawat</h3>
+                        <ul class="event-meta">
+                            <li><strong data-i18n="timing_label">Time:</strong> <span data-i18n="event_nikah_time">06:30 PM (Nikah Khawan) | 08:00 PM (Dawat-e-Nikah)</span></li>
+                            <li><strong data-i18n="venue_label">Venue:</strong> <span data-i18n="event_nikah_venue">Patel Medical Complex, Fatema Nagar, MIDC, Jalgaon</span></li>
+                            <li><strong data-i18n="dress_code_label">Dress Code:</strong> <span data-i18n="event_nikah_dress">Traditional Festive / Formal Elegance</span></li>
+                        </ul>
+                        <p class="event-desc" data-i18n="event_nikah_desc">Buzurgon ki duaon aur Allah ki rehmat ke saath Aqd-e-Nikah aur shaandar dawat.</p>
+                        <div class="event-actions">
+                            <a href="api/calendar.php?event=nikah" class="btn-event-action" data-i18n="add_to_calendar">📅 Calendar Mein Save Karein</a>
+                            <a href="https://maps.google.com/?q=Patel+Medical,+Fatema+Nagar,+MIDC,+Jalgaon,+Maharashtra+425003" target="_blank" rel="noopener noreferrer" class="btn-event-action" data-i18n="view_on_maps">📍 Maps Par Dekhein</a>
+                        </div>
+                    </div>
+                    <!-- Walima -->
+                    <div class="event-card">
+                        <div class="event-header">
+                            <span class="event-date-badge" data-i18n="event_walima_date">Sunday, 31 Oct 2027</span>
+                            <span>⚜️</span>
+                        </div>
+                        <h3 class="event-title gold-gradient-text" data-i18n="event_walima_title">Grand Walima Reception (Dawat-e-Walima)</h3>
+                        <ul class="event-meta">
+                            <li><strong data-i18n="timing_label">Time:</strong> <span data-i18n="event_walima_time">07:30 PM Onwards</span></li>
+                            <li><strong data-i18n="venue_label">Venue:</strong> <span data-i18n="event_walima_venue">The Grand Imperial Lawn, Jalgaon</span></li>
+                            <li><strong data-i18n="dress_code_label">Dress Code:</strong> <span data-i18n="event_walima_dress">Evening Formal / Royal Attire</span></li>
+                        </ul>
+                        <p class="event-desc" data-i18n="event_walima_desc">Do khandaano ke milan ki khushiyon mein celebratory banquet aur duaon ki mehfil.</p>
+                        <div class="event-actions">
+                            <a href="api/calendar.php?event=walima" class="btn-event-action" data-i18n="add_to_calendar">📅 Calendar Mein Save Karein</a>
+                            <a href="https://maps.google.com/?q=Patel+Medical,+Fatema+Nagar,+MIDC,+Jalgaon,+Maharashtra+425003" target="_blank" rel="noopener noreferrer" class="btn-event-action" data-i18n="view_on_maps">📍 Maps Par Dekhein</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Blessings -->
+        <section id="family-section" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="family_section_title">Dua &amp; Family Blessings</span>
+                    <h2 class="section-title gold-gradient-text" data-i18n="family_section_title">Dua &amp; Family Blessings</h2>
+                    <p class="section-subtitle" data-i18n="family_section_subtitle">Khandaan ke bado ki duaon aur sarparasti mein</p>
+                    <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+                </div>
+                <div class="family-grid">
+                    <div class="family-card">
+                        <span class="section-badge" data-i18n="bride_side_title">Dulhan Ki Taraf Se (Deshmukh Khandaan)</span>
+                        <h3 class="family-side-title gold-gradient-text">Mr. Abdul Hadi H. &amp; Mrs. Shabana A. Deshmukh</h3>
+                        <p class="family-quote" data-i18n="bride_family_quote">“Hum aapko apni beti Ariba ke Nikah par duaon aur shirkat ke liye dil se dawat dete hain.”</p>
+                    </div>
+                    <div class="family-card">
+                        <span class="section-badge" data-i18n="groom_side_title">Dulha Ki Taraf Se (Patel Khandaan)</span>
+                        <h3 class="family-side-title gold-gradient-text">Mr. Abdulrahim G. &amp; Mrs. Khaleda A. Patel</h3>
+                        <p class="family-quote" data-i18n="groom_family_quote">“Allah (SWT) ke shukr ke saath, hum aapko Faizan &amp; Ariba ke Nikah mein dawat dete hain.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue Section -->
+        <section id="venue-section" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="venue_section_title">Venue &amp; Reaching There</span>
+                    <h2 class="section-title gold-gradient-text" data-i18n="venue_section_title">Venue &amp; Reaching There</h2>
+                    <p class="section-subtitle" data-i18n="venue_section_subtitle">Fatema Nagar, MIDC, Jalgaon mein aapka dil se swagat hai</p>
+                    <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+                </div>
+                <div class="venue-card">
+                    <div class="venue-details">
+                        <span class="section-badge">📍 Royal Destination</span>
+                        <h3 class="venue-title gold-gradient-text" data-i18n="venue_name">Patel Medical Complex</h3>
+                        <p class="venue-address" data-i18n="venue_address">Patel Medical, Fatema Nagar, MIDC, Jalgaon, Maharashtra 425003</p>
+                        <a href="https://maps.google.com/?q=Patel+Medical,+Fatema+Nagar,+MIDC,+Jalgaon,+Maharashtra+425003" target="_blank" rel="noopener noreferrer" class="btn-royal-primary">
+                            <span>🗺️</span> <span data-i18n="get_directions_btn">Google Maps Par Rasta Dekhein</span>
+                        </a>
+                    </div>
+                    <div class="venue-map-frame">
+                        <iframe src="https://www.google.com/maps?q=Patel+Medical,+Fatema+Nagar,+MIDC,+Jalgaon,+Maharashtra+425003&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Venue Map"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section id="rsvp-section" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="nav_rsvp">RSVP</span>
+                    <h2 class="section-title gold-gradient-text" data-i18n="rsvp_section_title">RSVP / Apni Shirkat Confirm Karein</h2>
+                    <p class="section-subtitle" data-i18n="rsvp_section_subtitle">Khushi mukammal kahan hoti hai apnon ke baghair, so aaiye, yeh shaam aapke naam bhi ho</p>
+                    <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+                </div>
+                <div class="rsvp-form-container">
+                    <form id="wedding-rsvp-form">
+                        <input type="hidden" name="csrf_token" value="demo_token_2027">
+                        <div class="form-group">
+                            <label for="rsvp-name" class="form-label" data-i18n="rsvp_name">Aapka Pura Naam *</label>
+                            <input type="text" id="rsvp-name" name="name" class="form-control" required placeholder="e.g. Tariq Patel" data-i18n-placeholder="rsvp_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="rsvp-phone" class="form-label" data-i18n="rsvp_phone">WhatsApp / Mobile Number *</label>
+                            <input type="tel" id="rsvp-phone" name="phone" class="form-control" required placeholder="e.g. +91 98765 43210" data-i18n-placeholder="rsvp_phone">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" data-i18n="rsvp_attending">Kya aap shaamil ho rahe hain? *</label>
+                            <div class="form-radio-group">
+                                <label class="radio-pill-label">
+                                    <input type="radio" name="attending" value="yes" checked>
+                                    <span data-i18n="rsvp_choice_yes">InshaAllah, Zaroor Shamil Honge! 🎉</span>
+                                </label>
+                                <label class="radio-pill-label">
+                                    <input type="radio" name="attending" value="maybe">
+                                    <span data-i18n="rsvp_choice_maybe">Koshish Poori Hai (Maybe)</span>
+                                </label>
+                                <label class="radio-pill-label">
+                                    <input type="radio" name="attending" value="no">
+                                    <span data-i18n="rsvp_choice_no">Maafi Chaahenge, Shirkat Se Qasir Hain</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="rsvp-guests" class="form-label" data-i18n="rsvp_guests_count">Kitne Mehman Aayenge (Including You)?</label>
+                            <select id="rsvp-guests" name="guests_count" class="form-control">
+                                <option value="1">1 Person</option>
+                                <option value="2">2 Persons</option>
+                                <option value="3">3 Persons</option>
+                                <option value="4">4 Persons</option>
+                                <option value="5">5+ Family Members</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rsvp-meal" class="form-label" data-i18n="rsvp_meal_pref">Khaane Ki Preference</label>
+                            <select id="rsvp-meal" name="meal_pref" class="form-control">
+                                <option value="nonveg" data-i18n="rsvp_meal_nonveg">Halal Gourmet &amp; Continental</option>
+                                <option value="veg" data-i18n="rsvp_meal_veg">Pure Vegetarian / Jain Available</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rsvp-message" class="form-label" data-i18n="rsvp_message">Dulha-Dulhan Ke Liye Koi Dua Ya Paigaam?</label>
+                            <textarea id="rsvp-message" name="message" class="form-control" rows="3" placeholder="Write your warm duas for Faizan &amp; Ariba..."></textarea>
+                        </div>
+                        <div style="text-align: center; margin-top: 25px;">
+                            <button type="submit" id="btn-submit-rsvp" class="btn-royal-primary">
+                                <span>💌</span> <span data-i18n="rsvp_submit_btn">RSVP Bhejein</span>
+                            </button>
+                        </div>
+                        <div id="rsvp-feedback-success" class="form-feedback success">
+                            <h4 style="font-size: 1.15rem; margin-bottom: 4px;" data-i18n="rsvp_success_title">Shukriya! Aapka RSVP Receive Ho Gaya Hai! ❤️</h4>
+                            <p style="font-size: 0.9rem;" data-i18n="rsvp_success_msg">Hum aapka Jalgaon mein swagat karne ke liye behad excited hain!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Direct Contacts Section -->
+        <section id="contact-section" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="contact_section_title">Sampark Karein / Hospitality</span>
+                    <h2 class="section-title gold-gradient-text" data-i18n="contact_section_title">Sampark Karein / Hospitality</h2>
+                    <p class="section-subtitle" data-i18n="contact_section_subtitle">Kisi bhi travel, stay ya help ke liye humse be-jhijhak sampark karein</p>
+                    <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img">
+                </div>
+                <div class="contacts-grid">
+                    <div class="contact-box">
+                        <span class="section-badge" data-i18n="bride_side_title">Dulhan Ki Taraf Se</span>
+                        <h3 class="contact-side-title gold-gradient-text">Mr. Abdul Hadi H. Deshmukh</h3>
+                        <p class="contact-person-name" data-i18n="bride_contact_relation">Bride's Father</p>
+                        <div class="contact-buttons-group">
+                            <a href="tel:+919876543210" class="btn-contact-call">📞 <span data-i18n="btn_call">Call Karein</span></a>
+                            <a href="https://wa.me/919876543210?text=Assalamu%20Alaikum!%20Main%20Faizan%20%26%20Ariba%20ke%20Nikah%20invitation%20ke%20bare%20mein%20connect%20karna%20chahta/chahti%20hoon." target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 <span data-i18n="btn_whatsapp">WhatsApp Message</span></a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <span class="section-badge" data-i18n="groom_side_title">Dulha Ki Taraf Se</span>
+                        <h3 class="contact-side-title gold-gradient-text">Mr. Abdulrahim G. Patel</h3>
+                        <p class="contact-person-name" data-i18n="groom_contact_relation">Groom's Father</p>
+                        <div class="contact-buttons-group">
+                            <a href="tel:+919876543211" class="btn-contact-call">📞 <span data-i18n="btn_call">Call Karein</span></a>
+                            <a href="https://wa.me/919876543211?text=Assalamu%20Alaikum!%20Main%20Faizan%20%26%20Ariba%20ke%20Nikah%20invitation%20ke%20bare%20mein%20connect%20karna%20chahta/chahti%20hoon." target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 <span data-i18n="btn_whatsapp">WhatsApp Message</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <span class="section-badge" data-i18n="share_section_title">Invitation Share Karein</span>
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 14px;">
+                        <button type="button" id="btn-share-native" class="btn-royal-primary">📤 <span data-i18n="share_native_btn">Share Invitation</span></button>
+                        <a href="https://api.whatsapp.com/send?text=Faizan%20%26%20Ariba%20Nikah%20Invitation%20http://localhost:8080/index.html" target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 <span data-i18n="share_whatsapp_btn">WhatsApp Par Bhejein</span></a>
+                        <button type="button" id="btn-copy-link" class="btn-royal-outline">📋 <span data-i18n="share_copy_btn">Link Copy Karein</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Golden Frame QR Code -->
+        <section id="qr-section" class="section-wrapper">
+            <div class="container">
+                <div class="qr-footer-card">
+                    <span class="section-badge" data-i18n="qr_section_title">Mobile Par Invitation Kholein</span>
+                    <h2 class="section-title gold-gradient-text" style="font-size: 1.6rem; margin-top: 8px;" data-i18n="qr_section_title">Mobile Par Invitation Kholein</h2>
+                    <p class="section-subtitle" style="font-size: 0.95rem; margin-bottom: 20px;" data-i18n="qr_section_subtitle">Apne phone ke camera se neeche diya gaya QR code scan karein aur kisi ke sath bhi share karein</p>
+                    <div class="qr-frame" id="qrcode-container" title="Scan with smartphone camera"></div>
+                    <p class="qr-instruction" data-i18n="qr_scan_instruction">📷 Scan with Phone Camera to Open Card</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Grand Footer -->
+    <footer class="grand-footer">
+        <div class="container">
+            <img src="assets/images/royal-crest.svg" alt="Monogram" style="width: 60px; margin: 0 auto 16px;">
+            <p class="quran-verse" data-i18n="final_blessing">“Aapki Shirkat Aur Duayein Hi Hamari Sabse Badi Khushi Hai”</p>
+            <p style="font-size: 1.05rem; color: var(--gold-bright); margin-bottom: 4px;" data-i18n="with_love">With Boundless Love &amp; Duas</p>
+            <h3 class="gold-gradient-text" style="font-family: var(--font-title); font-size: 1.3rem;" data-i18n="the_families">Deshmukh &amp; Patel Khandaan</h3>
+            <img src="assets/images/royal-divider.svg" alt="Royal Divider" class="royal-divider-img" style="max-width: 180px; margin: 15px auto;">
+            <p class="footer-copyright" style="font-size: 0.88rem; color: var(--ivory-cream); margin-bottom: 4px;" data-i18n="footer_copyright">Crafted with Love &amp; Duas for Faizan &amp; Ariba • 2027</p>
+            <p class="footer-rights" style="font-size: 0.82rem; color: var(--gold-bright); letter-spacing: 0.5px;" data-i18n="footer_rights">All Rights Reserved by Mashkoor Patel</p>
+        </div>
+    </footer>
+
+    <!-- QR Code Modal Popup -->
+    <div id="qr-modal" class="royal-modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-label="QR Code Invitation Modal">
+        <div class="royal-modal-card">
+            <button class="royal-modal-close" id="btn-close-qr-modal" aria-label="Close QR Modal">✕</button>
+            <div class="royal-modal-header">
+                <img src="assets/images/royal-crest.svg" alt="Royal Monogram" class="modal-crest">
+                <span class="section-badge">Digital Invitation</span>
+                <h3 class="gold-gradient-text modal-title">Scan to Open Invitation</h3>
+                <p class="modal-subtitle">Apne phone ke camera se scan karein aur kisi ke sath bhi share karein</p>
+            </div>
+            <div class="modal-qr-frame">
+                <div id="modal-qrcode-container"></div>
+            </div>
+            <p class="modal-qr-hint">📷 Scan with Phone Camera</p>
+            <div class="modal-actions">
+                <a href="https://api.whatsapp.com/send?text=Faizan%20%26%20Ariba%20Royal%20Nikah%20Invitation%20http://localhost:8080/index.html" target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 WhatsApp Share</a>
+                <button type="button" id="btn-modal-copy-link" class="btn-royal-outline">📋 Copy Link</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">✕</button>
+        <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Previous Image">❮</button>
+        <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Next Image">❯</button>
+        <div class="lightbox-content">
+            <img src="" alt="Zoomed Photo" id="lightbox-img" class="lightbox-img">
+            <p id="lightbox-caption" class="lightbox-caption-text"></p>
+        </div>
+    </div>
+
+    <!-- Background Wedding Audio Player -->
+    <audio id="wedding-audio" loop preload="auto">
+        <source src="assets/music.mp3" type="audio/mpeg">
+        <source src="assets/audio/music.mp3" type="audio/mpeg">
+        <source src="assets/audio/wedding-ambient.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="royal-toast" class="royal-toast" role="status" aria-live="polite"></div>
+
+    <!-- Scripts (Ordered for clean dependency resolution) -->
+    <script src="assets/js/petals.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/entrance.js"></script>
+    <script src="assets/js/scratch.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/rsvp.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const qrTarget = window.qrTargetUrl || window.location.href;
+
+            // Section QR Code
+            const qrContainer = document.getElementById('qrcode-container');
+            if (qrContainer && typeof QRCode !== 'undefined') {
+                new QRCode(qrContainer, {
+                    text: qrTarget,
+                    width: 175,
+                    height: 175,
+                    colorDark: "#081C15",
+                    colorLight: "#FAF7F2",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            }
+
+            // Modal QR Code
+            const modalQrContainer = document.getElementById('modal-qrcode-container');
+            if (modalQrContainer && typeof QRCode !== 'undefined') {
+                new QRCode(modalQrContainer, {
+                    text: qrTarget,
+                    width: 190,
+                    height: 190,
+                    colorDark: "#081C15",
+                    colorLight: "#FAF7F2",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            }
+
+            // QR Modal Toggle Logic
+            const qrModal = document.getElementById('qr-modal');
+            const btnShowQr = document.getElementById('btn-show-qr');
+            const btnCloseQrModal = document.getElementById('btn-close-qr-modal');
+            const btnModalCopyLink = document.getElementById('btn-modal-copy-link');
+
+            function openQrModal() {
+                if (qrModal) {
+                    qrModal.classList.add('active');
+                    qrModal.setAttribute('aria-hidden', 'false');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            function closeQrModal() {
+                if (qrModal) {
+                    qrModal.classList.remove('active');
+                    qrModal.setAttribute('aria-hidden', 'true');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            if (btnShowQr) {
+                btnShowQr.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    openQrModal();
+                });
+            }
+
+            if (btnCloseQrModal) {
+                btnCloseQrModal.addEventListener('click', closeQrModal);
+            }
+
+            if (qrModal) {
+                qrModal.addEventListener('click', (e) => {
+                    if (e.target === qrModal) {
+                        closeQrModal();
+                    }
+                });
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && qrModal && qrModal.classList.contains('active')) {
+                    closeQrModal();
+                }
+            });
+
+            if (btnModalCopyLink) {
+                btnModalCopyLink.addEventListener('click', () => {
+                    navigator.clipboard.writeText(qrTarget).then(() => {
+                        if (typeof showRoyalToast === 'function') {
+                            showRoyalToast('Invitation Link Copied! ✨');
+                        }
+                    });
+                });
+            }
+
+            // Countdown Timer
+            if (typeof initWeddingCountdown === 'function') {
+                initWeddingCountdown(window.weddingDate || '2027-10-30T19:00:00');
+            }
+        });
+    </script>
+</body>
+</html>
