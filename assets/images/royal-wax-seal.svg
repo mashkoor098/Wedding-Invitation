@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Royal Silver & Pearl Off-White 3D Coin Gradients -->
+    <radialGradient id="silverPearl" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#F5F7FA" />
+      <stop offset="50%" stop-color="#E1E5EB" />
+      <stop offset="75%" stop-color="#C2C8D2" />
+      <stop offset="100%" stop-color="#939CA8" />
+    </radialGradient>
+
+    <!-- Inner Core Silver Gradient -->
+    <radialGradient id="innerSilverCore" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#EEF1F6" />
+      <stop offset="70%" stop-color="#D1D7E0" />
+      <stop offset="100%" stop-color="#A5AEBA" />
+    </radialGradient>
+
+    <!-- 24K Gold Inlay Gradient -->
+    <linearGradient id="sealGoldInlay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8D1" />
+      <stop offset="30%" stop-color="#E5C158" />
+      <stop offset="60%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8B5A10" />
+    </linearGradient>
+
+    <!-- Metallic Edge Highlight -->
+    <linearGradient id="edgeGleam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#A8B2BF" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.9" />
+    </linearGradient>
+
+    <filter id="coinShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+    
+    <filter id="goldRelief" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#553805" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Coin Natural Scalloped / Beveled Outer Body (Silver / Off-White) -->
+  <circle cx="100" cy="100" r="92" fill="url(#silverPearl)" filter="url(#coinShadow)" stroke="url(#edgeGleam)" stroke-width="2"/>
+
+  <!-- Beveled Inner Coin Rim -->
+  <circle cx="100" cy="100" r="82" stroke="url(#sealGoldInlay)" stroke-width="2.5" fill="none"/>
+  <circle cx="100" cy="100" r="76" fill="url(#innerSilverCore)" stroke="#8F98A6" stroke-width="1"/>
+  
+  <!-- Intricate Islamic Beaded Ring -->
+  <circle cx="100" cy="100" r="70" stroke="url(#sealGoldInlay)" stroke-width="1.5" stroke-dasharray="3,3" fill="none" opacity="0.9"/>
+
+  <!-- Center Icon: Royal Crown / Seal Emblem in Gold -->
+  <path d="M 92, 74 L 100, 64 L 108, 74 L 115, 68 L 113, 80 L 87, 80 L 85, 68 Z" fill="url(#sealGoldInlay)" filter="url(#goldRelief)" />
+  <circle cx="100" cy="62" r="2.5" fill="url(#sealGoldInlay)" />
+  <circle cx="85" cy="66" r="2" fill="url(#sealGoldInlay)" />
+  <circle cx="115" cy="66" r="2" fill="url(#sealGoldInlay)" />
+
+  <!-- Clean Straightforward Golden "CLICK TO OPEN" in Center -->
+  <text x="100" y="108" font-family="'Cinzel', 'Cormorant Garamond', Georgia, serif" font-size="14" font-weight="700" fill="url(#sealGoldInlay)" text-anchor="middle" letter-spacing="2" filter="url(#goldRelief)">CLICK TO OPEN</text>
+  
+  <!-- Subtle decorative gold flourish underline -->
+  <path d="M 75, 122 Q 100, 126 125, 122" stroke="url(#sealGoldInlay)" stroke-width="1.5" fill="none" opacity="0.8" filter="url(#goldRelief)"/>
+  <circle cx="100" cy="124" r="2" fill="url(#sealGoldInlay)"/>
+</svg>
