@@ -50,15 +50,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.getElementById('nav-links');
 
   if (mobileToggle && navLinks) {
-    mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('mobile-open');
+    const iconHam = mobileToggle.querySelector('.icon-hamburger');
+    const iconClose = mobileToggle.querySelector('.icon-close');
+
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navLinks.classList.toggle('mobile-open');
+      if (iconHam && iconClose) {
+        iconHam.style.display = isOpen ? 'none' : 'block';
+        iconClose.style.display = isOpen ? 'block' : 'none';
+      }
     });
 
     // Close mobile menu on link click
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('mobile-open');
+        if (iconHam && iconClose) {
+          iconHam.style.display = 'block';
+          iconClose.style.display = 'none';
+        }
       });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !mobileToggle.contains(e.target)) {
+        navLinks.classList.remove('mobile-open');
+        if (iconHam && iconClose) {
+          iconHam.style.display = 'block';
+          iconClose.style.display = 'none';
+        }
+      }
     });
   }
 

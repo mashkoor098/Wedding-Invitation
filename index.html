@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faizan &amp; Ariba — Royal Nikah Invitation | 30 Oct 2027</title>
     
-    <meta name="description" content="You are cordially invited to celebrate the Nikah and Walima of Faizan Patel &amp; Ariba Deshmukh at Patel Medical, Fatema Nagar, MIDC, Jalgaon.">
+    <meta name="description" content="You are cordially invited to celebrate the Nikah and Walima of Faizan Deshmukh &amp; Ariba Patel at Patel Medical, Fatema Nagar, MIDC, Jalgaon.">
     <meta name="theme-color" content="#0B2B20">
     
     <meta property="og:type" content="website">
     <meta property="og:title" content="Faizan &amp; Ariba — Royal Nikah Invitation">
-    <meta property="og:description" content="You are cordially invited to celebrate the Nikah and Walima of Faizan Patel &amp; Ariba Deshmukh.">
+    <meta property="og:description" content="You are cordially invited to celebrate the Nikah and Walima of Faizan Deshmukh &amp; Ariba Patel.">
     <meta property="og:image" content="assets/images/og-invitation-cover.jpg">
-    <meta property="og:url" content="http://localhost:8080/index.html">
+    <meta property="og:url" content="https://wedding-invitation-brown-nine.vercel.app/">
 
     <link rel="icon" type="image/svg+xml" href="assets/images/royal-crest.svg">
 
@@ -32,7 +32,7 @@
         window.currentLocale = "hinglish";
         window.currentDirection = "ltr";
         window.weddingDate = "2027-10-30T19:00:00";
-        window.qrTargetUrl = "http://localhost:8080/index.html";
+        window.qrTargetUrl = "https://wedding-invitation-brown-nine.vercel.app/";
     </script>
 </head>
 <body class="entrance-active">
@@ -90,7 +90,18 @@
                     </ul>
                 </div>
 
-                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open Navigation Menu">☰</button>
+                <!-- Visible & Responsive Menu Toggle with SVG Icons -->
+                <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+                    <svg class="icon-hamburger" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
@@ -173,13 +184,13 @@
                     <!-- Bride Heart Scratch Card -->
                     <div class="scratch-card-box heart-card-box">
                         <div class="scratch-card-header">
-                            <span class="section-badge" data-i18n="scratch_bride_label">The Bride (Ariba Deshmukh)</span>
+                            <span class="section-badge" data-i18n="scratch_bride_label">The Bride (Ariba Patel)</span>
                         </div>
                         <div class="heart-scratch-wrapper">
                             <div class="heart-scratch-container" id="container-scratch-bride">
                                 <div class="scratch-revealed-content heart-revealed-content">
-                                    <img src="assets/images/bride.jpg" alt="Ariba Deshmukh" class="scratch-revealed-avatar">
-                                    <h3 class="scratch-revealed-name gold-gradient-text" data-i18n="bride_name">Ariba Deshmukh</h3>
+                                    <img src="assets/images/bride.jpg" alt="Ariba Patel" class="scratch-revealed-avatar">
+                                    <h3 class="scratch-revealed-name gold-gradient-text" data-i18n="bride_name">Ariba Patel</h3>
                                 </div>
                                 <canvas id="canvas-scratch-bride" class="scratch-canvas"></canvas>
                             </div>
@@ -197,13 +208,13 @@
                     <!-- Groom Heart Scratch Card -->
                     <div class="scratch-card-box heart-card-box">
                         <div class="scratch-card-header">
-                            <span class="section-badge" data-i18n="scratch_groom_label">The Groom (Faizan Patel)</span>
+                            <span class="section-badge" data-i18n="scratch_groom_label">The Groom (Faizan Deshmukh)</span>
                         </div>
                         <div class="heart-scratch-wrapper">
                             <div class="heart-scratch-container" id="container-scratch-groom">
                                 <div class="scratch-revealed-content heart-revealed-content">
-                                    <img src="assets/images/groom.jpg" alt="Faizan Patel" class="scratch-revealed-avatar">
-                                    <h3 class="scratch-revealed-name gold-gradient-text" data-i18n="groom_name">Faizan Patel</h3>
+                                    <img src="assets/images/groom.jpg" alt="Faizan Deshmukh" class="scratch-revealed-avatar">
+                                    <h3 class="scratch-revealed-name gold-gradient-text" data-i18n="groom_name">Faizan Deshmukh</h3>
                                 </div>
                                 <canvas id="canvas-scratch-groom" class="scratch-canvas"></canvas>
                             </div>
@@ -270,10 +281,10 @@
                         <!-- Slide 1: Bride -->
                         <div class="carousel-slide active" data-index="0">
                             <div class="carousel-slide-card">
-                                <img src="assets/images/img1.jpg" alt="Ariba Deshmukh — The Royal Bride" class="carousel-slide-img" loading="lazy">
+                                <img src="assets/images/img1.jpg" alt="Ariba Patel — The Royal Bride" class="carousel-slide-img" loading="lazy">
                                 <div class="carousel-slide-info">
                                     <span class="carousel-slide-tag" data-i18n="slide_bride_tag">The Bride</span>
-                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="bride_name">Ariba Deshmukh</h3>
+                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="bride_name">Ariba Patel</h3>
                                     <p class="carousel-slide-sub" data-i18n="slide_bride_sub">Grace, Elegance &amp; Purity</p>
                                 </div>
                             </div>
@@ -282,10 +293,10 @@
                         <!-- Slide 2: Groom -->
                         <div class="carousel-slide next" data-index="1">
                             <div class="carousel-slide-card">
-                                <img src="assets/images/img2.jpg" alt="Faizan Patel — The Royal Groom" class="carousel-slide-img" loading="lazy">
+                                <img src="assets/images/img2.jpg" alt="Faizan Deshmukh — The Royal Groom" class="carousel-slide-img" loading="lazy">
                                 <div class="carousel-slide-info">
                                     <span class="carousel-slide-tag" data-i18n="slide_groom_tag">The Groom</span>
-                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="groom_name">Faizan Patel</h3>
+                                    <h3 class="carousel-slide-title gold-gradient-text" data-i18n="groom_name">Faizan Deshmukh</h3>
                                     <p class="carousel-slide-sub" data-i18n="slide_groom_sub">Dignity, Chivalry &amp; Honor</p>
                                 </div>
                             </div>
@@ -483,13 +494,13 @@
                 </div>
                 <div class="family-grid">
                     <div class="family-card">
-                        <span class="section-badge" data-i18n="bride_side_title">Dulhan Ki Taraf Se (Deshmukh Khandaan)</span>
-                        <h3 class="family-side-title gold-gradient-text">Mr. Abdul Hadi H. &amp; Mrs. Shabana A. Deshmukh</h3>
+                        <span class="section-badge" data-i18n="bride_side_title">Dulhan Ki Taraf Se (Patel Khandaan)</span>
+                        <h3 class="family-side-title gold-gradient-text">Mr. Abdulrahim G. &amp; Mrs. Khaleda A. Patel</h3>
                         <p class="family-quote" data-i18n="bride_family_quote">“Hum aapko apni beti Ariba ke Nikah par duaon aur shirkat ke liye dil se dawat dete hain.”</p>
                     </div>
                     <div class="family-card">
-                        <span class="section-badge" data-i18n="groom_side_title">Dulha Ki Taraf Se (Patel Khandaan)</span>
-                        <h3 class="family-side-title gold-gradient-text">Mr. Abdulrahim G. &amp; Mrs. Khaleda A. Patel</h3>
+                        <span class="section-badge" data-i18n="groom_side_title">Dulha Ki Taraf Se (Deshmukh Khandaan)</span>
+                        <h3 class="family-side-title gold-gradient-text">Mr. Abdul Hadi H. &amp; Mrs. Shabana A. Deshmukh</h3>
                         <p class="family-quote" data-i18n="groom_family_quote">“Allah (SWT) ke shukr ke saath, hum aapko Faizan &amp; Ariba ke Nikah mein dawat dete hain.”</p>
                     </div>
                 </div>
@@ -605,20 +616,20 @@
                 <div class="contacts-grid">
                     <div class="contact-box">
                         <span class="section-badge" data-i18n="bride_side_title">Dulhan Ki Taraf Se</span>
-                        <h3 class="contact-side-title gold-gradient-text">Mr. Abdul Hadi H. Deshmukh</h3>
+                        <h3 class="contact-side-title gold-gradient-text">Mr. Abdulrahim G. Patel</h3>
                         <p class="contact-person-name" data-i18n="bride_contact_relation">Bride's Father</p>
                         <div class="contact-buttons-group">
-                            <a href="tel:+919876543210" class="btn-contact-call">📞 <span data-i18n="btn_call">Call Karein</span></a>
-                            <a href="https://wa.me/919876543210?text=Assalamu%20Alaikum!%20Main%20Faizan%20%26%20Ariba%20ke%20Nikah%20invitation%20ke%20bare%20mein%20connect%20karna%20chahta/chahti%20hoon." target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 <span data-i18n="btn_whatsapp">WhatsApp Message</span></a>
+                            <a href="tel:+917378517681" class="btn-contact-call">📞 <span data-i18n="btn_call">Call Karein</span></a>
+                            <a href="https://wa.me/917378517681?text=Assalamu%20Alaikum!%20Main%20Faizan%20%26%20Ariba%20ke%20Nikah%20invitation%20ke%20bare%20mein%20connect%20karna%20chahta/chahti%20hoon." target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 <span data-i18n="btn_whatsapp">WhatsApp Message</span></a>
                         </div>
                     </div>
                     <div class="contact-box">
                         <span class="section-badge" data-i18n="groom_side_title">Dulha Ki Taraf Se</span>
-                        <h3 class="contact-side-title gold-gradient-text">Mr. Abdulrahim G. Patel</h3>
+                        <h3 class="contact-side-title gold-gradient-text">Mr. Abdul Hadi H. Deshmukh</h3>
                         <p class="contact-person-name" data-i18n="groom_contact_relation">Groom's Father</p>
                         <div class="contact-buttons-group">
-                            <a href="tel:+919876543211" class="btn-contact-call">📞 <span data-i18n="btn_call">Call Karein</span></a>
-                            <a href="https://wa.me/919876543211?text=Assalamu%20Alaikum!%20Main%20Faizan%20%26%20Ariba%20ke%20Nikah%20invitation%20ke%20bare%20mein%20connect%20karna%20chahta/chahti%20hoon." target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 <span data-i18n="btn_whatsapp">WhatsApp Message</span></a>
+                            <a href="tel:+917378517681" class="btn-contact-call">📞 <span data-i18n="btn_call">Call Karein</span></a>
+                            <a href="https://wa.me/917378517681?text=Assalamu%20Alaikum!%20Main%20Faizan%20%26%20Ariba%20ke%20Nikah%20invitation%20ke%20bare%20mein%20connect%20karna%20chahta/chahti%20hoon." target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 <span data-i18n="btn_whatsapp">WhatsApp Message</span></a>
                         </div>
                     </div>
                 </div>
@@ -627,7 +638,7 @@
                     <span class="section-badge" data-i18n="share_section_title">Invitation Share Karein</span>
                     <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 14px;">
                         <button type="button" id="btn-share-native" class="btn-royal-primary">📤 <span data-i18n="share_native_btn">Share Invitation</span></button>
-                        <a href="https://api.whatsapp.com/send?text=Faizan%20%26%20Ariba%20Nikah%20Invitation%20http://localhost:8080/index.html" target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 <span data-i18n="share_whatsapp_btn">WhatsApp Par Bhejein</span></a>
+                        <a href="https://api.whatsapp.com/send?text=Faizan%20%26%20Ariba%20Nikah%20Invitation%20https%3A%2F%2Fwedding-invitation-brown-nine.vercel.app%2F" target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 <span data-i18n="share_whatsapp_btn">WhatsApp Par Bhejein</span></a>
                         <button type="button" id="btn-copy-link" class="btn-royal-outline">📋 <span data-i18n="share_copy_btn">Link Copy Karein</span></button>
                     </div>
                 </div>
@@ -676,7 +687,7 @@
             </div>
             <p class="modal-qr-hint">📷 Scan with Phone Camera</p>
             <div class="modal-actions">
-                <a href="https://api.whatsapp.com/send?text=Faizan%20%26%20Ariba%20Royal%20Nikah%20Invitation%20http://localhost:8080/index.html" target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 WhatsApp Share</a>
+                <a href="https://api.whatsapp.com/send?text=Faizan%20%26%20Ariba%20Royal%20Nikah%20Invitation%20https%3A%2F%2Fwedding-invitation-brown-nine.vercel.app%2F" target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">💬 WhatsApp Share</a>
                 <button type="button" id="btn-modal-copy-link" class="btn-royal-outline">📋 Copy Link</button>
             </div>
         </div>
