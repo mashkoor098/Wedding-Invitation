@@ -1206,9 +1206,7 @@ function applyLanguage(langKey) {
   document.body.style.fontFamily = data.font;
 
   // 3. Update Navbar Dropdown Display
-  const navFlag = document.getElementById('nav-current-flag');
   const navLangName = document.getElementById('nav-current-lang-name');
-  if (navFlag) navFlag.textContent = data.flag;
   if (navLangName) navLangName.textContent = data.name;
 
   // 4. Update Entrance Lang Pills Active State

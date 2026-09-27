@@ -59,7 +59,14 @@
             <div class="nav-controls">
                 <!-- Show QR Modal Button in Navbar -->
                 <button id="btn-show-qr" class="btn-nav-qr" aria-label="Show QR Code Modal" title="Scan / Share QR Code">
-                    <span>📱</span> <span data-i18n="nav_show_qr">Show QR</span>
+                    <svg class="nav-qr-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+                        <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+                        <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+                        <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+                        <path d="M7 7h.01M17 7h.01M7 17h.01M17 17h.01"></path>
+                    </svg>
+                    <span data-i18n="nav_show_qr">Show QR</span>
                 </button>
 
                 <button id="btn-audio-toggle" class="audio-toggle-btn" aria-label="Toggle Background Music">
@@ -72,21 +79,27 @@
                     <span id="audio-status-text" data-i18n="music_muted">Music On</span>
                 </button>
 
-                <!-- Navbar Language Dropdown -->
+                <!-- Navbar Language Dropdown with Professional Globe Icon -->
                 <div class="lang-dropdown-wrapper" id="lang-dropdown-wrapper">
-                    <button class="lang-toggle-btn" id="lang-toggle-btn" aria-expanded="false" aria-label="Select Language">
-                        <span id="nav-current-flag">✨</span>
+                    <button class="lang-toggle-btn" id="lang-toggle-btn" aria-expanded="false" aria-label="Select Language" title="Change Language">
+                        <svg class="nav-globe-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
                         <span id="nav-current-lang-name">Hinglish</span>
-                        <small>▼</small>
+                        <svg class="chevron-down-svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
                     </button>
                     <ul class="lang-menu" id="lang-menu">
-                        <li class="lang-menu-item active"><a href="javascript:void(0)" data-lang="hinglish"><span>✨ Hinglish</span></a></li>
-                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="urdu"><span>🌙 اردو (Urdu)</span></a></li>
-                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="english"><span>👑 English</span></a></li>
-                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="marathi"><span>🌸 मराठी (Marathi)</span></a></li>
-                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="hindi"><span>🪔 हिन्दी (Hindi)</span></a></li>
-                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="gujarati"><span>🏵️ ગુજરાતી (Gujarati)</span></a></li>
-                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="arabic"><span>⚜️ العربية (Arabic)</span></a></li>
+                        <li class="lang-menu-item active"><a href="javascript:void(0)" data-lang="hinglish"><span>Hinglish</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="urdu"><span>اردو (Urdu)</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="english"><span>English</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="marathi"><span>मराठी (Marathi)</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="hindi"><span>हिन्दी (Hindi)</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="gujarati"><span>ગુજરાતી (Gujarati)</span></a></li>
+                        <li class="lang-menu-item"><a href="javascript:void(0)" data-lang="arabic"><span>العربية (Arabic)</span></a></li>
                     </ul>
                 </div>
 
@@ -124,13 +137,13 @@
 
             <!-- Language Selector Directly Below the Seal -->
             <div class="entrance-lang-bar" aria-label="Select Language">
-                <button type="button" class="entrance-lang-pill active" data-lang="hinglish">✨ Hinglish</button>
-                <button type="button" class="entrance-lang-pill" data-lang="urdu">🌙 اردو (Urdu)</button>
-                <button type="button" class="entrance-lang-pill" data-lang="english">👑 English</button>
-                <button type="button" class="entrance-lang-pill" data-lang="marathi">🌸 मराठी (Marathi)</button>
-                <button type="button" class="entrance-lang-pill" data-lang="hindi">🪔 हिन्दी (Hindi)</button>
-                <button type="button" class="entrance-lang-pill" data-lang="gujarati">🏵️ ગુજરાતી (Gujarati)</button>
-                <button type="button" class="entrance-lang-pill" data-lang="arabic">⚜️ العربية (Arabic)</button>
+                <button type="button" class="entrance-lang-pill active" data-lang="hinglish">Hinglish</button>
+                <button type="button" class="entrance-lang-pill" data-lang="urdu">اردو (Urdu)</button>
+                <button type="button" class="entrance-lang-pill" data-lang="english">English</button>
+                <button type="button" class="entrance-lang-pill" data-lang="marathi">मराठी (Marathi)</button>
+                <button type="button" class="entrance-lang-pill" data-lang="hindi">हिन्दी (Hindi)</button>
+                <button type="button" class="entrance-lang-pill" data-lang="gujarati">ગુજરાતી (Gujarati)</button>
+                <button type="button" class="entrance-lang-pill" data-lang="arabic">العربية (Arabic)</button>
             </div>
         </div>
     </div>

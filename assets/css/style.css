@@ -543,7 +543,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 6px;
   height: 36px;
   padding: 0 12px;
   background: rgba(11, 43, 32, 0.85);
@@ -559,11 +559,20 @@ button {
   transition: var(--transition-smooth);
 }
 
+.btn-nav-qr svg {
+  stroke: var(--gold-bright);
+  transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
 .btn-nav-qr:hover {
   background: var(--gold-gradient);
   color: #081C15;
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
   transform: translateY(-2px);
+}
+
+.btn-nav-qr:hover svg {
+  stroke: #081C15;
 }
 
 .audio-toggle-btn {
@@ -582,6 +591,7 @@ button {
   white-space: nowrap;
   flex-shrink: 0;
   box-sizing: border-box;
+  transition: var(--transition-smooth);
 }
 
 .audio-bars { display: flex; align-items: flex-end; gap: 2px; height: 12px; }
@@ -599,7 +609,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 6px;
   height: 36px;
   padding: 0 10px;
   background: rgba(11, 43, 32, 0.85);
@@ -608,9 +618,37 @@ button {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--gold-bright);
+  cursor: pointer;
   white-space: nowrap;
   flex-shrink: 0;
   box-sizing: border-box;
+  transition: var(--transition-smooth);
+}
+
+.lang-toggle-btn svg.nav-globe-icon {
+  stroke: var(--gold-bright);
+  flex-shrink: 0;
+}
+
+.lang-toggle-btn svg.chevron-down-svg {
+  stroke: var(--gold-bright);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.lang-dropdown-wrapper.open .lang-toggle-btn svg.chevron-down-svg {
+  transform: rotate(180deg);
+}
+
+.lang-toggle-btn:hover {
+  background: var(--gold-gradient);
+  color: #081C15;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+}
+
+.lang-toggle-btn:hover svg.nav-globe-icon,
+.lang-toggle-btn:hover svg.chevron-down-svg {
+  stroke: #081C15;
 }
 
 .lang-menu {
